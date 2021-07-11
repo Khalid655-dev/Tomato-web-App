@@ -27,7 +27,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
 # Model saved with Keras model.save()
-MODEL_PATH = os.path.join(BASE_DIR)
+MODEL_PATH = os.path.join(BASE_DIR, 'ReTrained98Assets.h5')
 MODEL_PATH = os.path.abspath(MODEL_PATH)
 
 # Load your trained model
