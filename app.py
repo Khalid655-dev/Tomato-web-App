@@ -27,13 +27,13 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
 # Model saved with Keras model.save()
-MODEL_PATH = os.path.join(BASE_DIR, open('PKL1.pkl', 'rb'))
+MODEL_PATH = os.path.join(BASE_DIR)
 MODEL_PATH = os.path.abspath(MODEL_PATH)
 
 # Load your trained model
-##import tensorflow as tf
-##model = tf.keras.models.load_model(MODEL_PATH)
-model = pickle.load(MODEL_PATH)
+import tensorflow as tf
+model = tf.keras.models.load_model(MODEL_PATH)
+##model = pickle.load(MODEL_PATH)
 
 def model_predict(img_path, model):
 
